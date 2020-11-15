@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Irhad Barucija Contact</title>
+        <link rel="stylesheet" href="/assets/css/contact.css" />
+        <link rel="stylesheet" href="/assets/css/contact2.css" />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+        ></script>
+        <script
+            src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+            data-auto-a11y="true"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init('user_YlnuGvIGTDa3OQzXLuNjU');
+            })();
+
+            window.onload = function () {
+                document.getElementById('form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    // generate the contact number value
+                    this.contact_number.value = (Math.random() * 100000) | 0;
+                    emailjs.sendForm(
+                        'irhad.barucija@gmail.com',
+                        'template_du266ba',
+                        this,
+                        'user_YlnuGvIGTDa3OQzXLuNjU'
+                    );
+                    this.reset();
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="menu">
+                    <h3 class="logo">Irhad<span>Barucija</span></h3>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="main">
+                    <header>
+                        <div class="overlay">
+                            <div class="inner">
+                                <div class="gallery" id="gallery">
+                                    <div class="container-contact">
+                                        <span class="big-circle"></span>
+                                       
+                                        <div class="form">
+                                            <div class="contact-info">
+                                                <h3 class="title">Let's get in touch</h3>
+                                                <p class="text">
+                                                    Hello there! If you love violin and positive energy then
+                                                    follow me. You can find me on social media, just click
+                                                    on the icons below. <br />Want a private lesson?
+                                                    Beginner or intermediate, doesn't matter, feel free to
+                                                    send a message, so we can have fun exploring the violin
+                                                    and techniques or songs, whatever you love. <br />
+                                                    Also I'm playing gigs and wedding ceremonies, if you
+                                                    always wanted your favourite songs on your wedding
+                                                    ceremonie, contact me, but before you do check my
+                                                    youtube and instagram and see how it looks and sounds.
+                                                    I'm looking forward to seeing you. Cheers!
+                                                </p>
+        
+                                                <div class="social-media">
+                                                    <p class="connect">Connect with me :</p>
+                                                    <div class="social-icons">
+                                                        <a
+                                                            class="facebook"
+                                                            href="https://www.facebook.com/barucijairhad/"
+                                                            target="_blank"
+                                                        >
+                                                            <i class="fab fa-facebook-f"></i>
+                                                        </a>
+                                                        <a
+                                                            class="instagram"
+                                                            href="https://www.instagram.com/irhadbarucija/"
+                                                            target="_blank"
+                                                        >
+                                                            <i class="fab fa-instagram"></i>
+                                                        </a>
+                                                        <a
+                                                            class="youtube"
+                                                            href="https://www.youtube.com/channel/UC734k7rR0R6l4tLAy5SUgrQ"
+                                                            target="_blank"
+                                                        >
+                                                            <i class="fab fa-youtube"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="contact-form">
+                                                <span class="circle one"></span>
+                                                <span class="circle two"></span>
+        
+                                                <form autocomplete="off" id="form">
+                                                    <h3 class="title">Contact me</h3>
+                                                    <input type="hidden" name="contact_number" />
+                                                    <div class="input-container">
+                                                        <input
+                                                            id="name"
+                                                            type="text"
+                                                            name="name"
+                                                            class="input"
+                                                        />
+                                                        <label for="name">Name</label>
+                                                        <span>Name</span>
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <input
+                                                            id="email"
+                                                            type="email"
+                                                            name="email"
+                                                            class="input"
+                                                        />
+                                                        <label for="email">Email</label>
+                                                        <span>Email</span>
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <input
+                                                            id="phone"
+                                                            type="tel"
+                                                            name="phone"
+                                                            class="input"
+                                                        />
+                                                        <label for="phone">Phone</label>
+                                                        <span>Phone</span>
+                                                    </div>
+                                                    <div class="input-container textarea">
+                                                        <textarea
+                                                            id="message"
+                                                            name="message"
+                                                            class="input"
+                                                        ></textarea>
+                                                        <label for="message">Message</label>
+                                                        <span>Message</span>
+                                                    </div>
+                                                    <input type="submit" value="Send" class="btn" />
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </header>
+                   
+                </div>
+
+                <div class="shadow one"></div>
+                <div class="shadow two"></div>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="index.html" style="--i: 0.1s">Home</a>
+                    </li>
+                    <nav>
+                        <li>
+                            <a href="photo.html" style="--i: 0.15s">Photos</a>
+                        </li>
+                    </nav>
+                    <nav>
+                        <li>
+                            <a href="video.html" style="--i: 0.2s">Videos</a>
+                        </li>
+                    </nav>
+                    <nav>
+                        <li>
+                            <a class="current" href="contact.html" style="--i: 0.25s">Contact</a>
+                        </li>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+
+        <script src="/js/contact.js"></script>
+    </body>
+</html>
